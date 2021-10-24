@@ -7,6 +7,9 @@ function show() {
   document.querySelector(".homebtn").addEventListener("click", function () {
     location.href = "index.html";
   });
+  document.querySelector(".projectbtn").addEventListener("click", function () {
+    location.href = "projects.html";
+  });
 
   //   ScrollTrigger.create({
   //     trigger: "#panel2",

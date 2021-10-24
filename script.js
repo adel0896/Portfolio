@@ -10,6 +10,9 @@ function show() {
   document.querySelector(".homebtn").addEventListener("click", function () {
     location.href = "index.html";
   });
+  document.querySelector(".projectbtn").addEventListener("click", function () {
+    location.href = "projects.html";
+  });
   $(document).ready(function () {
     var $magic = $(".magic"),
       $scene = $(".scene"),
@@ -22,7 +25,15 @@ function show() {
   });
 
   document.querySelector("#projects").addEventListener("mouseover", changeimg);
+  document.querySelector("#projects").addEventListener("click", function () {
+    location.href = "projects.html";
+  });
+
   document.querySelector("#about").addEventListener("mouseover", changeimgabout);
+  document.querySelector("#about").addEventListener("click", function () {
+    location.href = "about.html";
+  });
+
   function changeimgabout() {
     document.querySelector("#about").classList.remove("about");
     document.querySelector("#about").classList.add("about2");
@@ -44,7 +55,23 @@ function show() {
   }
   //animation scrolling
 }
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
+let sections = gsap.utils.toArray(".image");
+gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".panel2",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: "+=3500",
+  },
+});
+document.querySelector(".explore").addEventListener("click", function () {
+  location.href = "projects.html";
+});
 // gsap.to(".panel2", {
 //   yPercent: -50,
 //   scrollTrigger: {
