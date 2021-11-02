@@ -832,7 +832,7 @@ footer img {
     grid-template-rows: 15vw 15vw 15vw 15vw 15vw 15vw;
   }
   .panel1 {
-    height: 60vh;
+    height: 100vh;
   }
   .scene {
     margin-top: 10vw;
