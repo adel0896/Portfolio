@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact me</title>
+  </head>
+  <body>
+    <div class="buttons">
+      <button class="menu homebtn">Home</button>
+      <button class="menu projectbtn">Projects</button>
+      <button class="menu aboutbtn">About me</button>
+      <button class="menu contactbtn">Contact me</button>
+    </div>
+    <div class="theform">
+      <form>
+        <fieldset>
+          <legend>Contact me for colaboration</legend>
+          <label for="name"
+            >Full Name
+            <input type="text" id="name" name="name" placeholder="Fullname e.g John Petersen" minlength="3" required />
+            <span class="error1">Please enter a valid name.</span>
+          </label>
+
+          <label for="email"
+            >E-mail Adress
+            <input type="email" id="email" name="email" placeholder="john@domain.com" required />
+            <span class="error2">Please enter a valid e-mail adress.</span>
+          </label>
+
+          <label for="message"
+            >Message
+            <textarea wrap="hard" name="message" id="message" cols="19" rows="5" placeholder="Write me a message" required></textarea>
+          </label>
+        </fieldset>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="pop-up1 hidden">
+      <div class="boxpop1">
+        <button class="close">X</button>
+        <p>
+          Thank you for reaching out to me!<br />
+          I will contact you with an e-mail as soon as possible! <br />
+          Have a nice day!
+        </p>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.facebook.com/adelyna.ade.520/"><img src="img/fb.png" alt="" /></a>
+      <a href="https://www.linkedin.com/in/adelina-stefania-radulescu-8046621b5/"><img src="img/linkedin.png" alt="" /></a>
+      <a href="https://www.instagram.com/adelinastefania3/"><img src="img/insta.png" alt="" /></a>
+    </footer>
+    <script src="contact.js"></script>
+  </body>
+</html>

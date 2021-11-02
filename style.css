@@ -68,8 +68,8 @@ body {
 .writing {
   position: relative;
   z-index: 10;
-  width: 35vw;
-  height: 10vw;
+  width: 100%;
+  height: 88%;
   display: grid;
   grid-template-columns: 10vw 10vw 7vw 10vw 10vw;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -540,8 +540,15 @@ body {
   top: 100px;
   z-index: 100;
 }
+.scene {
+  display: flex;
+  align-items: center;
+}
 .image {
-  width: 70vw;
+  min-width: 80vw;
+  /* width: 90vw;
+  height: 30vw; */
+  height: 50vw;
   padding: 10vw;
   filter: grayscale(100%);
 }
@@ -551,8 +558,8 @@ body {
 }
 .progress {
   position: relative;
-  width: 210px;
-  height: 3px;
+  width: 13vw;
+  height: 0.4vw;
   background: transparent;
   margin-left: 2vw;
 }
@@ -589,6 +596,7 @@ body {
   color: var(--text);
   transform: translateY(-50%);
   font-family: var(--font);
+  font-size: 1vw;
 }
 .skills {
   margin-top: 4vw;
@@ -597,6 +605,7 @@ body {
 }
 .skills p {
   font-family: var(--font);
+  font-size: 1vw;
   color: var(--text);
   margin-left: 2vw;
   padding-bottom: 1vw;
@@ -809,12 +818,59 @@ footer img {
   width: 5vw;
   height: 5vw;
 }
-/* .shopcontainer:hover::after {
-  content: "A very nice project";
-  color: var(--text);
-  font-size: 50vw;
-  position: relative;
-} */
-/* .shopcontainer:hover {
-  transition: all 1s;
-} */
+/* Media queries */
+@media (max-width: 360px) {
+  /* main page */
+  #bubble {
+    display: none;
+  }
+  .writing {
+    height: 100%;
+    row-gap: 5vw;
+    align-items: center;
+    grid-template-columns: 20vw 15vw 10vw 20vw 20vw;
+    grid-template-rows: 15vw 15vw 15vw 15vw 15vw 15vw;
+  }
+  .panel1 {
+    height: 60vh;
+  }
+  .scene {
+    margin-top: 10vw;
+    margin-bottom: 0;
+    height: 100%;
+    max-height: 100%;
+  }
+  .exp {
+    height: 14vw;
+    width: 80vw;
+  }
+  .my {
+    height: 15vw;
+    width: 18vw;
+    grid-column-start: 3;
+  }
+  .projects,
+  .projects2 {
+    height: 15vw;
+    width: 60vw;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .learn {
+    width: 65vw;
+    height: 15vw;
+    grid-row-start: 4;
+  }
+  .about,
+  .about2 {
+    width: 45vw;
+    height: 15vw;
+    grid-row-start: 5;
+  }
+  .pas {
+    width: 78vw;
+    height: 15vw;
+    grid-row-start: 6;
+  }
+}

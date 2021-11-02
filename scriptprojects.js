@@ -15,6 +15,9 @@ function start() {
   document.querySelector(".projectbtn").addEventListener("click", function () {
     location.href = "projects.html";
   });
+  document.querySelector(".contactbtn").addEventListener("click", function () {
+    location.href = "contact.html";
+  });
   updateProgressBar(60, 60);
   updateProgressBar1(80, 80);
   updateProgressBar2(75, 75);

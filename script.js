@@ -13,6 +13,9 @@ function show() {
   document.querySelector(".projectbtn").addEventListener("click", function () {
     location.href = "projects.html";
   });
+  document.querySelector(".contactbtn").addEventListener("click", function () {
+    location.href = "contact.html";
+  });
   $(document).ready(function () {
     var $magic = $(".magic"),
       $scene = $(".scene"),

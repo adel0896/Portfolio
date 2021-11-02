@@ -10,6 +10,9 @@ function show() {
   document.querySelector(".projectbtn").addEventListener("click", function () {
     location.href = "projects.html";
   });
+  document.querySelector(".contactbtn").addEventListener("click", function () {
+    location.href = "contact.html";
+  });
 
   //   ScrollTrigger.create({
   //     trigger: "#panel2",

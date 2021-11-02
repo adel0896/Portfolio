@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&display=swap");
+
+:root {
+  --main-bg: #19000b;
+  --text: #fee2ec;
+  --darker: #ffb3cf;
+  --font: "Nunito Sans", sans-serif;
+}
+
+fieldset {
+  border: transparent;
+  display: flex;
+  gap: 1vw;
+  flex-direction: column;
+}
+legend {
+  font-size: 3vw;
+  color: var(--text);
+  font-family: var(--font);
+  font-weight: 800;
+}
+label {
+  font-size: 2vw;
+  color: var(--text);
+  font-family: var(--font);
+}
+input,
+textarea {
+  all: unset;
+  cursor: pointer;
+  background: rgba(255, 179, 207, 0.55);
+  border-radius: 1rem;
+  padding: 1vw;
+}
+textarea {
+  resize: none;
+  margin-left: 6vw;
+}
+.theform {
+  /* width: 100%; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: auto;
+}
+#name {
+  margin-left: 5vw;
+}
+#email {
+  margin-left: 1.5vw;
+}
+button {
+  border: var(--darker);
+  margin: 1vw;
+  padding: 0.5em;
+  background: var(--main-bg);
+  color: var(--text);
+  font-size: 1.2vw;
+  border-radius: 10vw;
+  border-style: solid;
+  border-width: 0.2vw;
+  border-color: var(--darker);
+  cursor: pointer;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+.pop-up1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 12;
+  /* width: 100%; */
+  /* height: 100%; */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.boxpop1 {
+  width: 50vw;
+  height: 30vw;
+  /* transform: translate(50%, 35%); */
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* grid-template-columns: 2vw 10vw 2vw; */
+}
+.boxpop1 p {
+  margin: auto;
+  font-size: 2vw;
+  width: 70%;
+  color: var(--text);
+  font-family: var(--font);
+  /* grid-column-start: 2;
+  grid-row-start: 2; */
+}
+.hidden {
+  visibility: none;
+}
+.close {
+  position: absolute;
+  margin-left: 40%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: solid 2px;
+  border-color: var(--darker);
+}
+input:invalid:not(:placeholder-shown, :focus) {
+  border: 3px solid;
+  border-color: rgb(77, 57, 62);
+
+  animation: shake 0.125s 2 backwards;
+}
+.error1,
+.error2 {
+  font-size: 1.5vw;
+  color: var(--text);
+  font-family: var(--font);
+  opacity: 80%;
+  overflow: hidden;
+  max-height: 0;
+  display: block;
+  transition: 0.3s max-height;
+}
+
+input[type="text"]:invalid:not(:placeholder-shown, :focus) + .error1 {
+  /* display: ; */
+  max-height: 2rem;
+}
+input[type="email"]:invalid:not(:placeholder-shown, :focus) + .error2 {
+  /* display: ; */
+  /* width: 5rem; */
+  max-height: 2rem;
+}
+@keyframes shake {
+  25% {
+    transform: translateX(-6px);
+  }
+  75% {
+    transform: translateX(6px);
+  }
+}
+/* input[type="text"]:placeholder-shown {
+  border: solid 1px;
+  border-color: var(--darker);
+} */
