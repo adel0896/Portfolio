@@ -6,6 +6,12 @@ const projectshops = {
   skills: "Adobe XD,  HTML, CSS, Javascript, Illustrator, Photoshop",
 };
 function start() {
+  document.querySelector(".hamburger").addEventListener("click", function () {
+    document.querySelector("#navbar").classList.add("display");
+  });
+  document.querySelector(".closeburger").addEventListener("click", function () {
+    document.querySelector("#navbar").classList.remove("display");
+  });
   document.querySelector(".aboutbtn").addEventListener("click", function () {
     location.href = "about.html";
   });

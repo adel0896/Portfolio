@@ -922,4 +922,26 @@ footer img {
     height: 15vw;
     grid-row-start: 6;
   }
+  .image {
+    height: 100%;
+    /* min-height: 100vh; */
+    padding: 0;
+    /* margin-right: 20vw; */
+    width: 100%;
+    min-width: 100vw;
+    min-height: 100%;
+
+    /* min-width: 100vw; */
+  }
+  .explore {
+    font-size: 4vw;
+    left: 50%;
+  }
+  footer img {
+    width: 10vw;
+    height: 10vw;
+  }
+  /* .pic3 {
+    width: 90vw;
+  } */
 }
