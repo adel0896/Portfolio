@@ -835,6 +835,7 @@ footer img {
     height: 5vw;
     margin-left: 85%;
     margin-top: 10vw;
+    cursor: pointer;
   }
   .hamburger {
     display: inline-block;
@@ -858,14 +859,12 @@ footer img {
     overflow: hidden;
     justify-content: flex-start;
     background-color: var(--main-bg);
-  }
-  .hidden {
-    /* transform: translateX(100%);
-    transition: transform 0.2s ease;
-    overflow: hidden; */
     display: none;
   }
 
+  .display {
+    display: inline-flex;
+  }
   .menu {
     font-size: 5vw;
   }

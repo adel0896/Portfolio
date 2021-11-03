@@ -1,20 +1,20 @@
 "use strict";
 window.addEventListener("DOMContentLoaded", show);
-var w = document.documentElement.clientWidth || window.innerWidth;
-if (w <= 350) {
-  console.log("mobileview");
-  document.querySelector("#navbar").classList.add("hidden");
-} else if (w >= 351) {
-  document.querySelector("#navbar").classList.remove("hidden");
-  console.log("desktop");
-}
+// var w = document.documentElement.clientWidth || window.innerWidth;
+// if (w <= 350) {
+//   console.log("mobileview");
+//   document.querySelector("#navbar").classList.add("hidden");
+// } else if (w >= 351) {
+//   document.querySelector("#navbar").classList.remove("hidden");
+//   console.log("desktop");
+// }
 function show() {
   // nav
   document.querySelector(".hamburger").addEventListener("click", function () {
-    document.querySelector("#navbar").classList.remove("hidden");
+    document.querySelector("#navbar").classList.add("display");
   });
   document.querySelector(".closeburger").addEventListener("click", function () {
-    document.querySelector("#navbar").classList.add("hidden");
+    document.querySelector("#navbar").classList.remove("display");
   });
   // document.querySelector(".hamburger").addEventListener("click", function () {
   //   document.querySelector("#navbar").classList.add(".movebar");
