@@ -818,8 +818,57 @@ footer img {
   width: 5vw;
   height: 5vw;
 }
+/* nav */
+.hamburger,
+.closeburger {
+  display: none;
+}
 /* Media queries */
 @media (max-width: 360px) {
+  /* nav */
+  /* header {
+    position: absolute;
+  } */
+  .closeburger {
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 85%;
+    margin-top: 10vw;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .hamburger img {
+    width: 12vw;
+    height: 8vw;
+    position: absolute;
+    left: 80%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    position: absolute;
+    width: 70%;
+    height: 100vh;
+    z-index: 1000;
+    top: 0;
+    left: 30%;
+    overflow: hidden;
+    justify-content: flex-start;
+    background-color: var(--main-bg);
+  }
+  .hidden {
+    /* transform: translateX(100%);
+    transition: transform 0.2s ease;
+    overflow: hidden; */
+    display: none;
+  }
+
+  .menu {
+    font-size: 5vw;
+  }
   /* main page */
   #bubble {
     display: none;
@@ -839,6 +888,7 @@ footer img {
     margin-bottom: 0;
     height: 100%;
     max-height: 100%;
+    /* overflow: hidden; */
   }
   .exp {
     height: 14vw;
