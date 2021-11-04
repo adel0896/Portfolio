@@ -151,6 +151,7 @@ input[type="email"]:invalid:not(:placeholder-shown, :focus) + .error2 {
 }
 ::placeholder {
   color: var(--text);
+  opacity: 50%;
 }
 /* input[type="text"]:placeholder-shown {
   border: solid 1px;
