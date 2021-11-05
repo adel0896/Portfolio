@@ -812,11 +812,22 @@ body {
 }
 footer {
   position: relative;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
 }
 footer img {
   z-index: 20;
   width: 5vw;
   height: 5vw;
+}
+footer p {
+  color: var(--text);
+  padding-right: 1vw;
+  font-size: 1.5vw;
+
+  font-family: var(--font);
 }
 /* nav */
 .hamburger,
@@ -929,6 +940,7 @@ footer img {
     /* margin-right: 20vw; */
     min-width: 100vw;
     width: 100vw;
+    filter: none;
 
     /* min-height: 100%; */
 
@@ -948,6 +960,7 @@ footer img {
   /* Projects page */
   .skills {
     flex-direction: column;
+    margin-left: 20%;
   }
   .skills p {
     font-size: 4vw;
@@ -961,6 +974,129 @@ footer img {
   .progress_text2,
   .progress_text3,
   .progress_text4 {
+    font-size: 3vw;
+  }
+  body {
+    height: 100vh;
+  }
+  footer p {
+    color: var(--text);
+    font-size: 2.5vw;
+    padding-right: 1vw;
+    font-family: var(--font);
+  }
+
+  .descshop {
+    visibility: visible;
+    font-size: 4vw;
+    width: 100%;
+    padding-bottom: 10vw;
+  }
+  .allshop {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shopcontainer {
+    max-width: 100%;
+  }
+  .desccontent {
+    visibility: visible;
+    font-size: 4vw;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 10vw;
+  }
+  .allcontent {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contentcontainer {
+    max-width: 100%;
+  }
+  .descgame {
+    visibility: visible;
+    font-size: 4vw;
+    width: 100%;
+    padding-bottom: 10vw;
+  }
+  .allgame {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gamecontainer {
+    max-width: 100%;
+  }
+  .pop-up1,
+  .pop-up2,
+  .pop-up3 {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .boxpop {
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+    grid-template-rows: 0.2fr 1fr 1fr;
+  }
+  .close,
+  .close2,
+  .close3 {
+    font-size: 10vw;
+  }
+  .boxpop h1 {
+    font-size: 5vw;
+    padding: 5vw;
+    grid-column-end: 3;
+  }
+  .pop-up1 ul,
+  .pop-up2 ul,
+  .pop-up3 ul {
+    font-size: 4vw;
+    /* padding: 1vw; */
+  }
+  .pop-up1 ul li,
+  .pop-up2 ul li,
+  .pop-up3 ul li {
+    padding-bottom: 2vw;
+  }
+  .desc {
+    font-size: 4vw;
+    padding: 2vw;
+    padding-top: 10vw;
+  }
+  .pop-up1 h2,
+  .pop-up2 h2,
+  .pop-up3 h2 {
+    font-size: 5vw;
+  }
+  .links a {
+    font-size: 4vw;
+    padding: 1vw;
+  }
+  /* contact page */
+  fieldset {
+    gap: 10vw;
+  }
+  legend {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+  }
+  label {
+    font-size: 4vw;
+  }
+  input {
+    padding: 2vw;
+  }
+  #name {
+    margin-left: 8vw;
+  }
+  .error1,
+  .error2 {
+    font-size: 3vw;
+  }
+  textarea {
+    margin-left: 10vw;
+  }
+  button[type="submit"] {
     font-size: 3vw;
   }
 }
